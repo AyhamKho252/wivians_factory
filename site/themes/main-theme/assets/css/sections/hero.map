@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "hero.css",
+	"sources": [
+		"../../sass/sections/hero.scss",
+		"../../sass/_mixins.scss"
+	],
+	"sourcesContent": [
+		"@import '../mixins';\r\n\r\n.hero {\r\n    &__body {\r\n        padding-top: 120px;\r\n        padding-left: 126px;\r\n\r\n        &__heading {\r\n            color: #FFF;\r\n            font-family: Inter Tight;\r\n            font-size: 48px;\r\n            font-style: normal;\r\n            font-weight: 400;\r\n            line-height: normal;\r\n            letter-spacing: 0.96px;\r\n        }\r\n\r\n    }\r\n\r\n    .swiper-pagination-bullet {\r\n        width: 71px;\r\n        height: 6px;\r\n        border-radius: 0;\r\n        background: rgba(255, 255, 255, 0.70);\r\n        opacity: 1;\r\n\r\n        &:not(:last-child) {\r\n            margin-right: 24px !important;\r\n        }\r\n    }\r\n\r\n    .swiper-pagination-bullet-active {\r\n        background: linear-gradient(to right, #3F3F3E 0, #3F3F3E 70%, #FFFFFFB2 70%, #FFFFFFB2 100%);\r\n    }\r\n}",
+		"@mixin respond($brackpoint) {\n\n    @if $brackpoint == xs-phone {\n        @media ( max-width : 25em){ @content }; //400px\n    }\n    @if $brackpoint == sm-phone {\n        @media ( max-width : 35.99em){ @content }; //575px\n    }\n\n    @if $brackpoint == phone {\n        @media ( max-width : 47.99em){ @content }; //767px\n    }   \n    @if $brackpoint == sm-tab-port {\n        @media ( max-width : 61.99em){ @content }; //991px\n    }\n\n    @if $brackpoint == tab-port {\n        @media ( max-width : 64em){ @content }; //1024px\n    }\n    @if $brackpoint == lg-tab-port {\n        @media ( max-width : 75em){ @content }; //1200px\n    }\n    @if $brackpoint == sm-tab-land {\n        @media ( max-width : 80em){ @content }; //1280px\n    }\n    @if $brackpoint == md-tab-land {\n        @media ( max-width : 85em){ @content }; //1360px\n    }\n    @if $brackpoint == tab-land {\n        @media ( max-width : 87.5em){ @content }; //1400px\n    }\n\n}"
+	],
+	"names": [],
+	"mappings": ";;AAGK,AAAD,WAAO,CAAC;EACJ,WAAW,EAAE,KAAK;EAClB,YAAY,EAAE,KAAK;CAYtB;;;AAVI,AAAD,oBAAU,CAAC;EACP,KAAK,EAAE,IAAI;EACX,WAAW,EAAE,WAAW;EACxB,SAAS,EAAE,IAAI;EACf,UAAU,EAAE,MAAM;EAClB,WAAW,EAAE,GAAG;EAChB,WAAW,EAAE,MAAM;EACnB,cAAc,EAAE,MAAM;CACzB;;;AAbT,AAiBI,KAjBC,CAiBD,yBAAyB,CAAC;EACtB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,GAAG;EACX,aAAa,EAAE,CAAC;EAChB,UAAU,EAAE,wBAAyB;EACrC,OAAO,EAAE,CAAC;CAKb;;;AA3BL,AAwBQ,KAxBH,CAiBD,yBAAyB,AAOpB,IAAK,CAAA,WAAW,EAAE;EACf,YAAY,EAAE,eAAe;CAChC;;;AA1BT,AA6BI,KA7BC,CA6BD,gCAAgC,CAAC;EAC7B,UAAU,EAAE,gFAAgF;CAC/F"
+}

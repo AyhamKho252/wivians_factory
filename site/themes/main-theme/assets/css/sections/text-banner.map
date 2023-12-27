@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "text-banner.css",
+	"sources": [
+		"../../sass/sections/text-banner.scss",
+		"../../sass/_mixins.scss"
+	],
+	"sourcesContent": [
+		"@import '../mixins';\r\n\r\n.text-banner {\r\n    padding: 120px 125px;\r\n    @include respond(sm-tab-port){\r\n        padding:96px 16px;\r\n    }\r\n\r\n    &__heading {\r\n        color: var(--Wivians-Factory-Gray, #3F3F3E);\r\n\r\n        /* Desktop/H1 */\r\n        font-family: Inter Tight;\r\n        font-size: 48px;\r\n        font-style: normal;\r\n        font-weight: 400;\r\n        line-height: normal;\r\n        letter-spacing: 0.96px;\r\n        margin-bottom: 32px;\r\n    }\r\n\r\n    &__paragarph {\r\n        color: var(--Light-Gray-1, #AAA);\r\n\r\n        /* Desktop/Body */\r\n        font-family: Inter Tight;\r\n        font-size: 24px;\r\n        font-style: normal;\r\n        font-weight: 400;\r\n        line-height: 30px; /* 125% */\r\n        letter-spacing: 0.48px;\r\n    }\r\n\r\n    @include respond(phone){\r\n        &__heading {\r\n            font-size: 32px;\r\n            margin-bottom: 24px;\r\n        }\r\n    \r\n        &__paragarph {\r\n            font-size: 18px;\r\n        }\r\n    }\r\n\r\n}",
+		"@mixin respond($brackpoint) {\n\n    @if $brackpoint == xs-phone {\n        @media ( max-width : 25em){ @content }; //400px\n    }\n    @if $brackpoint == sm-phone {\n        @media ( max-width : 35.99em){ @content }; //575px\n    }\n\n    @if $brackpoint == phone {\n        @media ( max-width : 47.99em){ @content }; //767px\n    }   \n    @if $brackpoint == sm-tab-port {\n        @media ( max-width : 61.99em){ @content }; //991px\n    }\n\n    @if $brackpoint == tab-port {\n        @media ( max-width : 64em){ @content }; //1024px\n    }\n    @if $brackpoint == lg-tab-port {\n        @media ( max-width : 75em){ @content }; //1200px\n    }\n    @if $brackpoint == sm-tab-land {\n        @media ( max-width : 80em){ @content }; //1280px\n    }\n    @if $brackpoint == md-tab-land {\n        @media ( max-width : 85em){ @content }; //1360px\n    }\n    @if $brackpoint == tab-land {\n        @media ( max-width : 87.5em){ @content }; //1400px\n    }\n\n}"
+	],
+	"names": [],
+	"mappings": ";;AAEA,AAAA,YAAY,CAAC;EACT,OAAO,EAAE,WAAW;CAyCvB;;AC/BO,MAAM,EAAE,SAAS,EAAE,OAAO;;EDXlC,AAAA,YAAY,CAAC;IAGL,OAAO,EAAC,SAAS;GAuCxB;;;;AApCI,AAAD,qBAAU,CAAC;EACP,KAAK,EAAE,oCAAoC;EAE3C,gBAAgB;EAChB,WAAW,EAAE,WAAW;EACxB,SAAS,EAAE,IAAI;EACf,UAAU,EAAE,MAAM;EAClB,WAAW,EAAE,GAAG;EAChB,WAAW,EAAE,MAAM;EACnB,cAAc,EAAE,MAAM;EACtB,aAAa,EAAE,IAAI;CACtB;;;AAEA,AAAD,uBAAY,CAAC;EACT,KAAK,EAAE,yBAAyB;EAEhC,kBAAkB;EAClB,WAAW,EAAE,WAAW;EACxB,SAAS,EAAE,IAAI;EACf,UAAU,EAAE,MAAM;EAClB,WAAW,EAAE,GAAG;EAChB,WAAW,EAAE,IAAI;EAAE,UAAU;EAC7B,cAAc,EAAE,MAAM;CACzB;;ACrBG,MAAM,EAAE,SAAS,EAAE,OAAO;;EDwBzB,AAAD,qBAAU,CAAC;IACP,SAAS,EAAE,IAAI;IACf,aAAa,EAAE,IAAI;GACtB;;EAEA,AAAD,uBAAY,CAAC;IACT,SAAS,EAAE,IAAI;GAClB"
+}

@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "footer.css",
+	"sources": [
+		"../sass/footer.scss"
+	],
+	"sourcesContent": [
+		"// @import'./mixins';\r\n\r\n// .footer {\r\n   \r\n// }"
+	],
+	"names": [],
+	"mappings": ""
+}

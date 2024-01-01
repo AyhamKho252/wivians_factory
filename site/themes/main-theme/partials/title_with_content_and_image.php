@@ -24,8 +24,8 @@
                     <div class="split-img-text__body">
                         <?php if (get_sub_field('title')): ?>
                             <h3 class="split-img-text__body__heading d-lg-block d-none">
-                                <?php echo get_sub_field('title'); ?><svg xmlns="http://www.w3.org/2000/svg" width="44"
-                                    height="2" viewBox="0 0 44 2" fill="none">
+                                <?php echo strip_tags(get_sub_field('title')); ?><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="44" height="2" viewBox="0 0 44 2" fill="none">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M44 1.5H0V0.5H44V1.5Z" fill="#3F3F3E" />
                                 </svg>
                             </h3>
